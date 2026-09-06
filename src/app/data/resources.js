@@ -10,7 +10,6 @@ export const dimensions = [
       {
         id: "arch",
         title: "Agent Architecture",
-        type: "table",
         source: "ipsum lorem",
         description:
           "Agent architecture describes the hardware, software, and data infrastructure of a system.",
@@ -20,7 +19,6 @@ export const dimensions = [
       {
         id: "nav",
         title: "Navigation",
-        type: "equation", 
         source: "ipsum lorem",
         description:
           "Navigation describes goal-directed movement through environments",
@@ -30,7 +28,6 @@ export const dimensions = [
       {
         id: "tool_use",
         title: "Tool-Use",
-        type: "equation",
         source: "ipsum lorem",
         description:
           "Tool-use characterizes a tool-using agent's understanding of object affordances and function calling.",
@@ -40,7 +37,6 @@ export const dimensions = [
       {
         id: "spa_ana",
         title: "Spatial Analysis",
-        type: "table",
         source: "ipsum lorem",
         description:
           "Spatial analysis describes an agent's capacity for spatial reasoning and representation.",
@@ -50,7 +46,6 @@ export const dimensions = [
       {
         id: "consistency",
         title: "Consistency",
-        type: "table",
         source: "ipsum lorem",
         description:
           "Consistency is a measure of an agent's reproducibility of results under identical conditions.",
@@ -60,7 +55,6 @@ export const dimensions = [
       {
         id: "robust",
         title: "Robustness",
-        type: "equation",
         source: "ipsum lorem",
         description:
           "Robustness is an agent's ability to weather the deviations in conditions between its training and deployment environments.",
@@ -78,7 +72,6 @@ export const dimensions = [
       {
         id: "efficiency",
         title: "Efficiency and Cost",
-        type: "equation",
         source: "ipsum lorem",
         description:
           "Efficiency and cost metrics measure the time and resources that an agent uses to complete a task.",
@@ -88,7 +81,6 @@ export const dimensions = [
       {
         id: "traj",
         title: "Trajectory and Planning",
-        type: "equation",
         source: "ipsum lorem",
         description:
           "Planning includes two stages: plan formulation and plan reflection.",
@@ -98,7 +90,6 @@ export const dimensions = [
       {
         id: "reliability",
         title: "Reliablity",
-        type: "equation",
         source: "ipsum lorem",
         description:
           "Reliability refers to an agent's consistent performance over time and across repetitions.",
@@ -108,7 +99,6 @@ export const dimensions = [
       {
         id: "capabilities",
         title: "Agentic Capabilities",
-        type: "table",
         source: "ipsum lorem",
         description:
           "A hierarchy of agentic capabilities can be used to evaluate the amount of economically useful work that AI agents can perform.",
@@ -118,7 +108,6 @@ export const dimensions = [
       {
         id: "predictability",
         title: "Predictability",
-        type: "equation",
         source: "ipsum lorem",
         description:
           "Predictability measures an agent's confidence in whether its output is reliable.",
@@ -128,7 +117,6 @@ export const dimensions = [
       {
         id: "generality",
         title: "Generality",
-        type: "table",
         source: "ipsum lorem",
         description:
           "Generality characterizes an AI agent's ability to operate across different contexts and tasks.",
@@ -146,7 +134,6 @@ export const dimensions = [
       {
         id: "safety",
         title: "Safety Metrics",
-        type: "equation",
         source: "ipsum lorem",
         description:
           "As AI agents gain autonomy, harmful behaviors become more likely and AI safety more critical. AI safety quantifies the severity and frequency of harmful behaviors.",
@@ -163,7 +150,6 @@ export const dimensions = [
       {
         id: "intent",
         title: "Intentionality",
-        type: "table",
         source: "ipsum lorem",
         description:
           "Intentionality is a behavioral profile characterized by purpose, foresight, volition, temporal commitment, and coherence.",
@@ -173,7 +159,6 @@ export const dimensions = [
       {
         id: "goal_complex",
         title: "Goal Complexity",
-        type: "table",
         source: "ipsum lorem",
         description:
           "Goal complexity is evaluated based on hierarchical planning, plan length of the required tasks, and multi-objectivity.",
@@ -183,7 +168,6 @@ export const dimensions = [
       {
         id: "goal_exec",
         title: "Goal Execution",
-        type: "equation",
         source: "ipsum lorem",
         description:
           "Goal execution metrics describe an AI system's end-to-end task performance. We categorize these metrics as task-based or resource-based.",
@@ -193,7 +177,6 @@ export const dimensions = [
       {
         id: "resilience",
         title: "Resilience and Adaptation",
-        type: "equation",
         source: "ipsum lorem",
         description:
           "Resilience is the ability of systems to the ability of systems to withstand and recover from disruptive events. The adaptation aspect of resilience refers to a reinforcement effect.",
@@ -211,7 +194,6 @@ export const dimensions = [
       {
         id: "coherence",
         title: "Coherence",
-        type: "equation",
         source: "ipsum lorem",
         description:
           "Coherence is a structural requirement for an artificial system, made possible by an active processing window (APW) that defines the \“relevant now\”.",
@@ -220,7 +202,6 @@ export const dimensions = [
       {
         id: "hysteresis",
         title: "Hysteresis",
-        type: "equation",
         source: "ipsum lorem",
         description:
           "Hysteresis is a physics concept that describes the lag between and effect and its cause.",

@@ -3,12 +3,16 @@
 import { useMemo, useState, useRef } from "react";
 import { dimensions } from "./data/resources";
 
+import "./components/content.css"
+
+{/* Import all components */}
 {/* Environmental Impact Components */}
 import AgentArchitecture from "./components/env_int/AgentArchitecture";
 import Nav from "./components/env_int/Navigation";
 import Tools from "./components/env_int/Tools";
 import Spatial from "./components/env_int/Spatial";
 import Consistency from "./components/env_int/Consistency";
+import Robustness from "./components/env_int/Robust"
 
 {/* Learning and Adaptation Components */}
 import Efficiency from "./components/learn/Efficiency";
@@ -37,6 +41,7 @@ const ContentComponents = {
   "tools": Tools,
   "spatial": Spatial,
   "consistency": Consistency,
+  "robust": Robustness,
 
   "efficiency": Efficiency,
   "trajectory": Trajectory,
@@ -129,7 +134,6 @@ export default function Page() {
     return selectedDimension.resources.filter((resource) =>
       [
         resource.title,
-        resource.type,
         resource.source,
         resource.description,
       ].some((value) => value.toLowerCase().includes(query))
@@ -352,11 +356,6 @@ export default function Page() {
                       }`
                     }
                   >
-                    <div className="flex items-start justify-between gap-4">
-                      <span className="rounded-full bg-slate-100 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-slate-500">
-                      {resource.type}
-                      </span>
-                    </div>
 
                     <div className="mt-5">
                       <h4 className="text-lg font-bold tracking-tight text-slate-900 transition group-hover:text-sky-600">

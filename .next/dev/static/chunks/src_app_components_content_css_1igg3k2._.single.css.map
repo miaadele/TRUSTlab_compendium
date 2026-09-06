@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/components/content.css"],"sourcesContent":["table, th, td {\n    padding: 10px;\n    text-align: left;\n    border: 1px solid black;\n    border-collapse: collapse;\n}\na{\n    color: oklch(68.5% 0.169 237.323);\n}\n\n.inline-math .katex {\n    font-size: 0.8em;\n}\n\n.accordion {\n  width: 100%;\n  background-color: #f0f9ff;\n  border-radius: 8px;\n  overflow:hidden;\n}\n\n.accordion-header {\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 10px;\n  border: none;\n  cursor: pointer;\n  text-align: left;\n}\n\n.accordion-content {\n  padding: 10px;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;AAMA;;;;;AAIA;;;;AAIA;;;;;;;AAOA;;;;;;;;;;;AAWA"}}]
+}

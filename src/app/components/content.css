@@ -1,0 +1,35 @@
+table, th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+a{
+    color: oklch(68.5% 0.169 237.323);
+}
+
+.inline-math .katex {
+    font-size: 0.8em;
+}
+
+.accordion {
+  width: 100%;
+  background-color: #f0f9ff;
+  border-radius: 8px;
+  overflow:hidden;
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.accordion-content {
+  padding: 10px;
+}

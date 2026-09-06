@@ -1,0 +1,40 @@
+/* [project]/src/app/components/content.css [app-client] (css) */
+table, th, td {
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+a {
+  color: #00a5ef;
+  color: lab(63.3038% -18.433 -51.0407);
+}
+
+.inline-math .katex {
+  font-size: .8em;
+}
+
+.accordion {
+  background-color: #f0f9ff;
+  border-radius: 8px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.accordion-header {
+  cursor: pointer;
+  text-align: left;
+  border: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+}
+
+.accordion-content {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=src_app_components_content_css_1igg3k2._.single.css.map*/

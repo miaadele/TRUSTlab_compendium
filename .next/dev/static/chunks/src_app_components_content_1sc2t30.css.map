@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/mialassiter/Documents/GitHub/TRUSTlab_compendium/src/app/components/content.css"],"sourcesContent":["table, th, td {\n    padding: 10px;\n    text-align: left;\n    border: 1px solid black;\n    border-collapse: collapse;\n}\na{\n    color: oklch(68.5% 0.169 237.323);\n}"],"names":[],"mappings":"AAAA;;;;;;;AAMA"}}]
+}

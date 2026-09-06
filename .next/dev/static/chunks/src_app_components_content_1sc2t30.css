@@ -1,0 +1,14 @@
+/* [project]/src/app/components/content.css [app-client] (css) */
+table, th, td {
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+a {
+  color: #00a5ef;
+  color: lab(63.3038% -18.433 -51.0407);
+}
+
+/*# sourceMappingURL=src_app_components_content_1sc2t30.css.map*/
