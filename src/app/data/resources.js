@@ -197,6 +197,7 @@ export const dimensions = [
         source: "ipsum lorem",
         description:
           "Coherence is a structural requirement for an artificial system, made possible by an active processing window (APW) that defines the \“relevant now\”.",
+        content: "coherence"
       },
 
       {
@@ -205,6 +206,7 @@ export const dimensions = [
         source: "ipsum lorem",
         description:
           "Hysteresis is a physics concept that describes the lag between and effect and its cause.",
+        content: "hysteresis"
       },
     ],
   },
