@@ -260,3 +260,18 @@
 {"timestamp":"43:29:26.231","source":"Server","level":"LOG","message":"✓ Compiled in 29ms"}
 {"timestamp":"43:35:01.467","source":"Server","level":"LOG","message":"✓ Compiled in 125ms"}
 {"timestamp":"43:35:27.343","source":"Server","level":"LOG","message":"✓ Compiled in 30ms"}
+{"timestamp":"43:57:59.916","source":"Server","level":"LOG","message":"✓ Compiled in 102ms"}
+{"timestamp":"43:58:01.064","source":"Browser","level":"ERROR","message":"Uncaught ReferenceError: expert is not defined\n    at Safety (src/app/components/autonomy/Safety.jsx:104:38)\n    at Page (src/app/components/learn/Capabilities.jsx:134:19)\n  \u001b[90m102 |\u001b[0m ...              <td>\u001b[35m4\u001b[0m: \u001b[33mAI\u001b[0m \u001b[36mas\u001b[0m an <b>expert<\u001b[35m/b></td\u001b[0m>\n  \u001b[90m103 |\u001b[0m ...              <td>\n\u001b[31m\u001b[1m>\u001b[0m \u001b[90m104 |\u001b[0m ...                \u001b[33mAI\u001b[0m \u001b[36mas\u001b[0m an \\textbf{expert} & \u001b[33mAI\u001b[0m drives interaction; ...\n  \u001b[90m    |\u001b[0m                                     \u001b[31m\u001b[1m^\u001b[0m\n  \u001b[90m105 |\u001b[0m ...              </td>\n  \u001b[90m106 |\u001b[0m ...            </tr>\n  \u001b[90m107 |\u001b[0m ...            <tr>"}
+{"timestamp":"43:58:01.065","source":"Server","level":"ERROR","message":"[browser] \"\\u001b[31mUncaught ReferenceError: expert is not defined\\u001b[39m\\n\\u001b[31m    at Safety (src/app/components/autonomy/Safety.jsx:104:38)\\n    at Page (src/app/components/learn/Capabilities.jsx:134:19)\\u001b[39m\\n  \\u001b[90m102 |\\u001b[0m ...              <td>\\u001b[35m4\\u001b[0m: \\u001b[33mAI\\u001b[0m \\u001b[36mas\\u001b[0m an <b>expert<\\u001b[35m/b></td\\u001b[0m>\\n  \\u001b[90m103 |\\u001b[0m ...              <td>\\n\\u001b[31m\\u001b[1m>\\u001b[0m \\u001b[90m104 |\\u001b[0m ...                \\u001b[33mAI\\u001b[0m \\u001b[36mas\\u001b[0m an \\\\textbf{expert} & \\u001b[33mAI\\u001b[0m drives interaction; ...\\n  \\u001b[90m    |\\u001b[0m                                     \\u001b[31m\\u001b[1m^\\u001b[0m\\n  \\u001b[90m105 |\\u001b[0m ...              </td>\\n  \\u001b[90m106 |\\u001b[0m ...            </tr>\\n  \\u001b[90m107 |\\u001b[0m ...            <tr>\""}
+{"timestamp":"43:58:22.356","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload due to a runtime error."}
+{"timestamp":"43:58:22.410","source":"Server","level":"LOG","message":"✓ Compiled in 33ms"}
+{"timestamp":"43:58:22.567","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"43:58:44.200","source":"Server","level":"LOG","message":"✓ Compiled in 33ms"}
+{"timestamp":"43:58:51.708","source":"Server","level":"LOG","message":"✓ Compiled in 26ms"}
+{"timestamp":"43:59:08.815","source":"Server","level":"LOG","message":"✓ Compiled in 28ms"}
+{"timestamp":"43:59:43.322","source":"Server","level":"LOG","message":"✓ Compiled in 30ms"}
+{"timestamp":"43:59:56.306","source":"Server","level":"LOG","message":"✓ Compiled in 29ms"}
+{"timestamp":"44:00:21.958","source":"Server","level":"LOG","message":"✓ Compiled in 31ms"}
+{"timestamp":"44:00:41.989","source":"Server","level":"LOG","message":"✓ Compiled in 35ms"}
+{"timestamp":"44:00:52.014","source":"Server","level":"LOG","message":"✓ Compiled in 29ms"}
+{"timestamp":"44:01:03.535","source":"Server","level":"LOG","message":"✓ Compiled in 32ms"}
