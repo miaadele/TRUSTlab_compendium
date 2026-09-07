@@ -173,10 +173,8 @@ export default function Consistency() {
           <table>
             <thead>
               <tr>
-                <td><b>
-                  Dimension
-                </b></td>
-                <td><b>Measurement Description</b></td>
+                <th>Dimension</th>
+                <th>Measurement Description</th>
               </tr>
             </thead>
             <tbody>

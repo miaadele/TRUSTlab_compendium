@@ -29,9 +29,9 @@ export default function Robust() {
       <table>
         <thead>
           <tr>
-            <td><b>Benchmark</b></td>
-            <td><b>Use Case</b></td>
-            <td><b>Robustness Metrics</b></td>
+            <th>Benchmark</th>
+            <th>Use Case</th>
+            <th>Robustness Metrics</th>
           </tr>
         </thead>
         <tbody>
@@ -104,14 +104,14 @@ export default function Robust() {
       <table>
         <thead>
           <tr>
-            <td><b>Equation</b></td>
-            <td><b>Measurement Protocol</b></td>
+            <th style={{width:"20%"}}>Equation</th>
+            <th>Measurement Protocol</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>
-              <span class="inline-math">
+              <span className="inline-math">
                 <InlineMath
                   math={String.raw`
                     R_{fault}=\min \left(
