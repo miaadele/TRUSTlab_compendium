@@ -115,36 +115,69 @@ export default function Page() {
     }
 };
 
-  const selectedDimension =
-    dimensions.find((dimension) => dimension.id === activeDimension) || dimensions[0];
+const selectedDimension = 
+  dimensions.find((dimension) =>
+    dimension.id === activeDimension
+  ) || dimensions[0];
 
   const selectedComponent = selectedDimension.resources.find(
     (resource) => resource.id === activeComponent
   );
 
-  const ContentComponent = selectedComponent?.content ? ContentComponents[selectedComponent.content]:null;
+  const ContentComponent = selectedComponent?.content
+    ? ContentComponents[selectedComponent.content] : null;
+  
+  const handleResourceSelect = (resource) => {
+  if (resource.dimensionId) {
+    setActiveDimension(resource.dimensionId);
+  }
+
+  setActiveComponent(resource.id);
+  setSearch("");
+};
+
+  /* search functionality */
+  const allResources = useMemo(() => {
+    return dimensions.flatMap((dimension) =>
+    dimension.resources.map((resource) => ({
+      ...resource,
+      dimensionId: dimension.id,
+      dimensionName: dimension.name,
+    })));
+  }, []);
 
   const filteredResources = useMemo(() => {
     const query = search.trim().toLowerCase();
 
+    // Search across all dimensions
+    const allResources = dimensions.flatMap((dimension) =>
+      dimension.resources.map((resource) => ({
+        ...resource,
+        dimensionId: dimension.id,
+        dimensionName: dimension.name,
+      }))
+    );
+
+    // No search: show resources for current dimension
     if (!query) {
       return selectedDimension.resources;
     }
 
-    return selectedDimension.resources.filter((resource) =>
+    // Search across all dimensions
+    return allResources.filter((resource) =>
       [
         resource.title,
         resource.source,
         resource.description,
-      ].some((value) => value.toLowerCase().includes(query))
+        resource.dimensionName,
+      ].some((value) =>
+      value?.toLowerCase().includes(query)
+      )
     );
   }, [search, selectedDimension]);
 
-  const totalResources = dimensions.reduce(
-    (total, dimension) => total + dimension.resources.length,
-    0
-  );
-
+  const totalResources = allResources.length;
+  
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
       {/* Background decoration */}
@@ -221,7 +254,7 @@ export default function Page() {
                   type="search"
                   value={search}
                   onChange={(event) => setSearch(event.target.value)}
-                  placeholder={`Search ${selectedDimension.name}...`}
+                  placeholder={`Search the compendium...`}
                   className="w-full rounded-2xl border border-slate-200 bg-white py-4 pl-12 pr-5 text-sm text-slate-900 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-sky-500 focus:ring-4 focus:ring-sky-100"
                   aria-label="Search resources"
                 />
@@ -347,7 +380,7 @@ export default function Page() {
                 {filteredResources.map((resource) => (
                   <article
                     key={resource.id}
-                    onClick={()=>setActiveComponent(resource.id)}
+                    onClick={()=>handleResourceSelect(resource)}
                     className={
                       `group flex min-h-[260px] w-[85%] shrink-0 snap-start flex-col rounded-2xl p-6 transition duration-200 sm:w-[55%] md:w-[42%] lg:w-[32%] ${
                         activeComponent === resource.id
